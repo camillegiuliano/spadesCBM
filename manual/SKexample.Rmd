@@ -143,12 +143,13 @@ barplot <- CBMutils::barPlot(
 ```
 # Map of pixel-level average NPP
 NppPlot <- CBMutils::NPPplot(
-  cohortGroupKeep = simMngedSK$cohortGroupKeep,
   NPP = simMngedSK$NPP,
+  year = 2000, # set simulation eyar
   masterRaster = simMngedSK$masterRaster
+  cohortGroupKeep = simMngedSK$cbm_vars$key
 )
 ```
-![](https://raw.githubusercontent.com/PredictiveEcology/spadesCBM/main/manual/images/NPPplot.png){fig-align="center" width="700"}
+![](https://raw.githubusercontent.com/PredictiveEcology/spadesCBM/main/manual/images/NPPEnd.png){fig-align="center" width="700"}
 
 ```
 # Map of total carbon per pixel for a simulation year
@@ -156,8 +157,8 @@ spatialPlot <- CBMutils::patialPlot(
   cbmPools = simMngedSK$cbmPools,
   years = 2000, # set simulation year 
   masterRaster = simMngedSK$masterRaster,
-  cohortGroupKeep = simMngedSK$cohortGroupKeep
+  cohortGroupKeep = simMngedSK$cbm_vars$key
 )
 ```
-![](https://raw.githubusercontent.com/PredictiveEcology/spadesCBM/main/manual/images/spatialPlot.png){fig-align="center" width="700"}
+![](https://raw.githubusercontent.com/PredictiveEcology/spadesCBM/main/manual/images/TotalCarbonEnd.png){fig-align="center" width="700"}
 
