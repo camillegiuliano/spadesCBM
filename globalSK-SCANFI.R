@@ -59,10 +59,10 @@ out <- SpaDES.project::setupProject(
                                                      destinationPath = "inputs",
                                                      fun = terra::rast)),
   ageDataYear = 2020,
-  userGcMeta = as.data.table(reproducible::prepInputs(url = "https://drive.google.com/file/d/12RHUTxQX9yRwgkWKDzWrA3q27FVYU_3h/view?usp=drive_link",
+  userGcMeta = as.data.table(reproducible::prepInputs(url = "https://drive.google.com/file/d/1rlygsfT9Te6XHNAKNQxfQJDwMybXLijG/view?usp=drive_link",
                                                       destinationPath = "inputs",
                                                       fun = fread)),
-  userGcM3 = as.data.table(reproducible::prepInputs(url = "https://drive.google.com/file/d/1rlygsfT9Te6XHNAKNQxfQJDwMybXLijG/view?usp=drive_link",
+  userGcM3 = as.data.table(reproducible::prepInputs(url = "https://drive.google.com/file/d/12RHUTxQX9yRwgkWKDzWrA3q27FVYU_3h/view?usp=drive_link",
                                                     destinationPath = "inputs",
                                                     fun = fread)),
 
